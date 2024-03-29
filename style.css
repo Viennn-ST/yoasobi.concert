@@ -1,0 +1,343 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #db5b5b;
+    box-shadow: 0 3 20px rgba(0,0,0,0.1);
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  header img {
+    width: 100px;
+    display: inline-block;
+  }
+  
+  header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Navigation */
+  nav {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #f00;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    height: 400px;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .hero:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .overlay p {
+    color: #fff;
+    text-align: center;
+  }
+
+  /* Text */
+  .hero-text {
+    text-align: center;
+    text-shadow: #333;
+    text-overflow: clip;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    height: auto;
+    bottom: 14px;
+    height: auto;
+  }
+
+  /* Text */
+  
+  /* Info Konser Section */
+  .info-konser,
+  .pilih-tiket,
+  .form-data {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .info-konser h2,
+  .pilih-tiket h2,
+  .form-data h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .info-konser ul,
+  .pilih-tiket ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .info-konser ul li,
+  .pilih-tiket ul li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .info-konser ul li p,
+  .pilih-tiket ul li p {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Formulir Data Diri */
+  .form-data form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-data label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .form-data input,
+  .form-data button {
+    padding: 10px;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    box-shadow: #333;
+  }  
+
+  /* Pilih Tiket Section */
+  .pilih-tiket a { /* Target the anchor tag within .pilih-tiket section */
+    display: inline-block; /* Allow styling like a button element */
+    padding: 10px 20px; /* Adjust padding for desired size */
+    border: none;
+    border-radius: 5px;
+    background-color: #db5b5b; /* Change to your desired color */
+    color: #fff; /* Change to your desired text color */
+    font-weight: bold;
+    text-decoration: none; /* Remove underline from link */
+    cursor: pointer; /* Indicate clickable element */
+    transition: background-color 0.3s ease-in-out; /* Add hover effect */
+  }
+  
+  .pilih-tiket a:hover {
+    background-color: rgb(36, 35, 35); /* Change hover color */
+  }
+
+.pilih-tiket {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .pilih-tiket h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .pilih-tiket ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pilih-tiket ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .pilih-tiket ul li:hover {
+    background-color: #db5b5b;
+  }
+  
+  .pilih-tiket input[type="radio"] {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .pilih-tiket label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .pilih-tiket label span {
+    display: inline-block;
+    margin-left: 14px;
+  }
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #f00;
+  }
+  
+  .h2-go {
+    text-align: center;
+  }
+
+  .form-data button {
+    padding: 10px 20px; /* Adjust padding for desired button size */
+    border: none;
+    border-radius: 5px;
+    background-color: #db5b5b; /* Change to your desired color */
+    color: #fff; /* Change to your desired text color */
+    font-weight: bold;
+    cursor: pointer; /* Indicate clickable element */
+    transition: background-color 0.3s ease-in-out; /* Add hover effect */
+  }
+  
+  .form-data button:hover {
+    background-color: rgb(43, 41, 41); /* Change hover color */
+  }
+
+  /* Purchase */
+  /* Pembayaran Selesai Section */
+.pembayaran-selesai {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f0f8e8;
+  text-align: center;
+}
+
+.pembayaran-selesai h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #009688;
+  margin-bottom: 15px;
+}
+
+.pembayaran-selesai p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.pembayaran-selesai ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pembayaran-selesai ul li {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.pembayaran-selesai ul li span {
+  color: #333;
+  margin-left: 10px;
+}
+
+/* Kembali ke halaman utama */
+.kembali-ke-halaman-utama {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #db5b5b;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.kembali-ke-halaman-utama:hover {
+  background-color: #f0f8e8;
+}
+
+
